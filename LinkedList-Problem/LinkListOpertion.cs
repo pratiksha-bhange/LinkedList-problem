@@ -8,8 +8,7 @@ namespace LinkedList_Problem
     {
 
         public Node head;
-
-        public void insert(int value)
+        public void append(int value)
         {
             Node newNode = new Node();
             newNode.data = value;
@@ -17,6 +16,7 @@ namespace LinkedList_Problem
             if (head != null)
             {
                 Node temp = head;
+
                 while (temp.next != null)
                 {
                     temp = temp.next;
@@ -29,7 +29,7 @@ namespace LinkedList_Problem
             }
         }
 
-        public void Add(int value)
+        public void add(int value)
         {
             Node newNode = new Node();
             newNode.data = value;
@@ -38,20 +38,26 @@ namespace LinkedList_Problem
             head = newNode;
             newNode.next = temp;
         }
-
         public void display()
         {
-            Node temp = head;
-            while (temp.next != null)
+            if (head == null)
             {
-                Console.WriteLine(temp.data);
-                temp = temp.next;
+                Console.WriteLine("Linked List is empty");
             }
-            Console.WriteLine(temp.data);
+            else
+            {
+                Node temp = head;
+
+                while (temp.next != null)
+                {
+                    Console.WriteLine(temp.data);
+                    temp = temp.next;
+                }
+                Console.WriteLine(temp.data);
+            }
         }
     }
 }
-
 
 
 
