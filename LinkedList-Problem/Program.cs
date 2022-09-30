@@ -8,14 +8,31 @@ namespace LinkedList_Problem
         {
             Console.WriteLine("Welcome To the Data structure program using Linked List");
 
-            LinkListOpertion listOperation = new LinkListOpertion();
-            listOperation.append(56);
-            listOperation.append(30);
-            listOperation.append(70);
-            listOperation.display();
+            //Ablity To Create Linked List By Appending
+            LinkListOpertion linkistOperation = new LinkListOpertion();
+            linkistOperation.Add(56);
+            linkistOperation.Add(30);
+            linkistOperation.Add(70);
+            linkistOperation.Display();
+
+            linkistOperation = new LinkListOpertion();
+            linkistOperation.Add2(70);
+            linkistOperation.Add2(30);
+            linkistOperation.Add2(56);
+            linkistOperation.Display();
+
+            linkistOperation = new LinkListOpertion();
+            linkistOperation.Add(56);
+            linkistOperation.Add(70);
+            linkistOperation.Display();
+
+            Console.WriteLine("\n");
+            linkistOperation.InsertAtParticularPoistion(2, 30);
+            linkistOperation.Display();
         }
     }
-}    
+}
+  
     
     
 
