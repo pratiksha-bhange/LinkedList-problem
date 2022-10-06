@@ -14,25 +14,24 @@ namespace LinkedList_Problem
             linkistOperation.Add(30);
             linkistOperation.Add(70);
             linkistOperation.Display();
-
             linkistOperation = new LinkListOpertion();
             linkistOperation.Add2(70);
             linkistOperation.Add2(30);
             linkistOperation.Add2(56);
             linkistOperation.Display();
-
             linkistOperation = new LinkListOpertion();
             linkistOperation.Add(56);
             linkistOperation.Add(70);
             linkistOperation.Display();
-
             Console.WriteLine("\n");
             linkistOperation.InsertAtParticularPoistion(2, 30);
+            linkistOperation.Display();
+            Console.WriteLine("First element is poped out from linked list = " + linkistOperation.removeFirstNode().data);
             linkistOperation.Display();
         }
     }
 }
-  
-    
-    
+
+
+
 

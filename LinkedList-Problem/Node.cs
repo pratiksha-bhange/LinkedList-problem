@@ -14,5 +14,6 @@ namespace LinkedList_Problem
         {
             this.data = data;
         }
-    }   
+    }
 }
+

@@ -75,7 +75,7 @@ namespace LinkedList_Problem
             }
             else
             {
-                while (poistion != 0)
+                while (poistion-- != 0)
                 {
                     if (poistion == 1)
                     {
@@ -91,6 +91,13 @@ namespace LinkedList_Problem
             }
             return head;
         }
+        public Node removeFirstNode()
+        {
+            if (this.head == null)
+                return null;
+            Node temp = head;
+            head = head.next;
+            return temp;
+        }
     }
 }
-
